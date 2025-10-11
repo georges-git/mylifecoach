@@ -1,0 +1,37 @@
+
+body {
+    font-family: 'Nunito', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f8ff;
+    color: #333;
+}
+header {
+    background-color: #4fc3f7;
+    padding: 2em;
+    text-align: center;
+    color: white;
+}
+.cta {
+    display: inline-block;
+    margin-top: 1em;
+    padding: 0.5em 1em;
+    background-color: #0288d1;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+section {
+    padding: 2em;
+}
+form input, form textarea {
+    width: 100%;
+    padding: 0.5em;
+    margin: 0.5em 0;
+}
+footer {
+    text-align: center;
+    padding: 1em;
+    background-color: #4fc3f7;
+    color: white;
+}
