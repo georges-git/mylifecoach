@@ -1,37 +1,93 @@
 
 body {
-    font-family: 'Nunito', sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f0f8ff;
-    color: #333;
+  font-family: 'Nunito', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f0f8ff;
+  color: #333;
 }
 header {
-    background-color: #4fc3f7;
-    padding: 2em;
-    text-align: center;
-    color: white;
+  background: #4fc3f7;
+  text-align: center;
+  color: white;
+  padding: 2em 1em;
+}
+.hero-image img {
+  width: 100%;
+  max-height: 350px;
+  object-fit: cover;
 }
 .cta {
-    display: inline-block;
-    margin-top: 1em;
-    padding: 0.5em 1em;
-    background-color: #0288d1;
-    color: white;
-    text-decoration: none;
-    border-radius: 5px;
+  background: #0288d1;
+  color: white;
+  padding: 0.5em 1em;
+  border-radius: 5px;
+  text-decoration: none;
 }
 section {
-    padding: 2em;
+  padding: 2em;
 }
 form input, form textarea {
-    width: 100%;
-    padding: 0.5em;
-    margin: 0.5em 0;
+  width: 100%;
+  padding: 0.7em;
+  margin: 0.5em 0;
+}
+button {
+  background: #0288d1;
+  color: white;
+  border: none;
+  padding: 0.7em 1.5em;
+  border-radius: 5px;
 }
 footer {
-    text-align: center;
-    padding: 1em;
-    background-color: #4fc3f7;
-    color: white;
+  text-align: center;
+  padding: 1em;
+  background: #4fc3f7;
+  color: white;
+}
+blockquote {
+  background: #e0f7fa;
+  padding: 1em;
+  border-left: 5px solid #4fc3f7;
+  margin: 1em 0;
+}
+.feature-img {
+  width: 100%;
+  max-width: 700px;
+  display: block;
+  margin: 1em auto;
+  border-radius: 10px;
+}
+
+.cta, button {
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+.cta:hover, button:hover {
+  transform: scale(1.05);
+  background-color: #0277bd;
+}
+
+blockquote {
+  position: relative;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeUp 1s forwards;
+  animation-delay: 0.2s;
+}
+
+blockquote:nth-of-type(2) { animation-delay: 0.4s; }
+blockquote:nth-of-type(3) { animation-delay: 0.6s; }
+blockquote:nth-of-type(4) { animation-delay: 0.8s; }
+blockquote:nth-of-type(5) { animation-delay: 1.0s; }
+blockquote:nth-of-type(6) { animation-delay: 1.2s; }
+blockquote:nth-of-type(7) { animation-delay: 1.4s; }
+blockquote:nth-of-type(8) { animation-delay: 1.6s; }
+blockquote:nth-of-type(9) { animation-delay: 1.8s; }
+blockquote:nth-of-type(10) { animation-delay: 2.0s; }
+
+@keyframes fadeUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
